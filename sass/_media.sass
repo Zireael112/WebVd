@@ -1,0 +1,188 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(xl)
+    .navigation
+        a:not(:first-child)
+            padding-left: calc( $gutter / 2 )
+    .home-content-h1 
+        h1
+            font-size: 48px
+            padding-bottom: calc( $gutter / 2 )
+    .home-content-h2
+        h2
+            font-size: 20px
+    .bg-image-thi
+        width: 800px
+        height: 800px
+    .about-header
+        font-size: 52px
+        margin-bottom: calc( $gutter /  4 )
+    .work-data
+        display: inline 
+        text-align: center
+    .work-info
+        position: static
+        display: inline
+        max-width: 500px
+        margin-right: auto
+        &-text
+            font-size: 18px
+        a
+            font-size: 18px !important
+    .work-img
+        margin: 100px auto 10px
+        width: 60%
+    .right::after, button::after 
+        letter-spacing: .6px
+// ≥992px
++media-breakpoint-down(lg)
+    .navigation
+        a:not(:first-child)
+            padding-left: calc( $gutter / 3 )
+    .home-content-h1 
+        h1
+            font-size: 38px
+            padding-bottom: calc( $gutter / 3 )
+    .home-content-h2
+        h2
+            font-size: 16px
+    .bg-image-thi
+        width: 700px
+        height: 700px
+    .bg-image-sec
+        width: 1000px
+        height: 1000px
+        top: -800px
+        left: 200px
+    .bg-image-fou
+        width: 500px
+        height: 500px
+    .bg-image-fir
+        top: 500px
+        left: -100px
+        width: 700px
+        height: 700px
+    .fa 
+        font-size: 64px !important
+    .contacts-header
+        margin-top: 15px
+        font-size: 54px 
+    .ct-bg-3
+        width: 600px
+        height: 600px
+        top: 650px
+    .ct-bg-2
+        width: 450px
+        height: 450px
+        top: 580px
+    .ct-bg-1
+        display: none
+    .work-info-text
+        line-height: .1
+    .work-img
+        margin: 100px auto 10px
+        width: 80%
+// ≥768px
++media-breakpoint-down(md)
+    .bg-image-thi
+        width: 500px
+        height: 500px
+        right: -200px
+        top: -200px
+    .portfolio, .space
+        display: none
+    .fix-fluid
+        display: none
+    .home-content-h1 
+        h1
+            margin-top: 15px
+            font-size: 32px
+    .home-content-h2
+        h2
+            margin-left: 25%
+    header
+        .row
+            text-align: center
+    .ab-bg
+        display: none
+    .about-header 
+        margin-bottom: 0
+        padding: 0
+        font-size: 32px
+    .tech-title
+        margin-top: calc( $gutter / 2 )
+    .ct-bg-3
+        width: 400px
+        height: 400px
+        top: 650px
+    .ct-bg-2
+        width: 250px
+        height: 250px
+        top: 580px
+    .work-img
+        margin: 100px auto 10px
+        width: 100%
+    
+// ≥576px
++media-breakpoint-down(sm)
+    #fp-nav
+        display: none !important
+    .bg-image-thi
+        width: 400px
+        height: 400px
+    .bg-image-sec
+        width: 700px
+        height: 700px
+        top: -570px
+        left: 0
+    .tech-title, .desg-title, .believer, .passion
+        font-size: 12px
+    .tech, .desg
+        font-size: 1.2vh
+    .about-header
+        margin-top: 15px
+    .ct-bg-3
+        width: 150px
+        height: 150px
+        top: 700px
+    .ct-bg-2
+        width: 150px
+        height: 150px
+        top: 650px
+    .fa-envelope
+        -webkit-animation-duration: 0s
+        animation-duration: 0s
+    .work-info
+        max-width: 300px
+        margin-right: auto
+        line-height: .1
+        &-text
+            font-size: 15px
+        a
+            font-size: 15px
+            line-height: 1.4
+    button
+        padding: 5px 10px
+        
+    .right::after, button::after 
+        padding: 35px 30px
+        letter-spacing: .5px
+    
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
